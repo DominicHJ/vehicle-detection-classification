@@ -38,7 +38,7 @@ Grad-CAM是CAM的泛化版本，相对于CAM来说，Grad-CAM不需要改变网�
 **5.2基于CAM的分类和弱监督检测方案**  
 1）参考论文[《Learning Deep Features for Discriminative Localization》](https://arxiv.org/abs/1512.04150)  
 2）论文主体思想：  
-CNN网络中各卷积核除了提取特征外，其实本身已经具有物体检测功能，即使没有单独对物体的位置检测进行监督学习，而这种能力在使用全连接层进行分类的时候会丧失。通过使用GAP（global average pooling）替代全连接层，可以保持网络定位物体的能力，且相对于全连接网络而言参数更少。论文中提出一种CAM（Class Activation Mapping）方法，可以将CNN在分类时使用的分类依据（图中对应的类别特征）在原图的位置进行可视化，并绘制成热图，以此作为物体定位的依据，具体请见[论文的解读](https://blog.csdn.net/dominic_s/article/details/81209887)。
+CNN网络中各卷积核除了提取特征外，其实本身已经具有物体检测功能，即使没有单独对物体的位置检测进行监督学习，而这种能力在使用全连接层进行分类的时候会丧失。通过使用GAP（global average pooling）替代全连接层，可以保持网络定位物体的能力，且相对于全连接网络而言参数更少。论文中提出一种CAM（Class Activation Mapping）方法，可以将CNN在分类时使用的分类依据（图中对应的类别特征）在原图的位置进行可视化，并绘制成热图，以此作为物体定位的依据，具体请见[论文的解读](https://blog.csdn.net/dominic_s/article/details/81209887)。    
 ![](./ImageforReadme/11.png 'CAM')  
 
 
